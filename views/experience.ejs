@@ -1,117 +1,269 @@
+
 <%- include("partials/header") %>
 
 <section class="experience-page">
-  <div class="container py-5">
+  <div class="experience-container">
 
-    <div class="text-center mb-5 fade-in">
-      <h1 class="fw-bold display-5">Professional Experience</h1>
-      <p class="text-muted">Enterprise Analytics | Business Intelligence | Data Engineering</p>
+    <!-- PAGE INTRO -->
+    <header class="experience-intro fade-in">
+      <p class="section-eyebrow">CAREER JOURNEY</p>
+      <h1>Professional <span>Experience.</span></h1>
+      <p class="experience-subtitle">
+        Building intelligent systems with machine learning, LLMs,
+        and production-ready AI infrastructure.
+      </p>
+
+      <div class="experience-focus">
+        <span>Applied AI / ML</span>
+        <span>LLM Applications</span>
+        <span>MLOps</span>
+        <span>Data Engineering</span>
+      </div>
+    </header>
+
+    <!-- EXPERIENCE TIMELINE -->
+    <div class="experience-timeline">
+
+      <!-- CIGNA HEALTHCARE -->
+      <article class="experience-card fade-in">
+        <div class="experience-card-top">
+          <div class="company-mark">CH</div>
+
+          <div class="experience-heading">
+            <h2>Cigna Healthcare</h2>
+            <p class="experience-role">AI/ML Engineer</p>
+            <p class="experience-location">Alabama, USA</p>
+          </div>
+
+          <div class="experience-date">
+            <span class="current-status">
+              <span class="status-dot"></span>
+              Present
+            </span>
+            <p>Feb 2026 – Present</p>
+          </div>
+        </div>
+
+        <div class="experience-divider"></div>
+
+        <h3 class="contribution-heading">Key Contributions</h3>
+
+        <ul class="experience-list">
+          <li>
+            Engineered a clinical documentation RAG assistant using
+            <strong>LangChain, GPT-4, and Pinecone</strong>, reducing
+            prior authorization processing time from 2 hours to 30 minutes
+            across 800 daily requests.
+          </li>
+
+          <li>
+            Architected an end-to-end <strong>Azure ML MLOps pipeline</strong>
+            with automated retraining, model versioning, CI/CD, and drift
+            detection, reducing deployment cycles from 3 weeks to 4 days
+            across 4 production models.
+          </li>
+
+          <li>
+            Fine-tuned a <strong>BioBERT</strong> model on 65,000 de-identified
+            clinical notes for ICD-10 prediction, achieving 0.914 top-3
+            accuracy and eliminating 3 hours of manual coding daily.
+          </li>
+
+          <li>
+            Launched an <strong>XGBoost</strong> member-risk inference pipeline
+            using AWS SageMaker Batch Transform, scoring 22,000 records nightly
+            and identifying 950 high-risk members for proactive outreach.
+          </li>
+
+          <li>
+            Designed a centralized feature store with
+            <strong>Apache Feast and Databricks Delta Lake</strong>,
+            standardizing 55 reusable features across 5 ML models and
+            removing 4 hours of redundant feature engineering per sprint.
+          </li>
+
+          <li>
+            Orchestrated a multi-step <strong>LangChain AI agent</strong>
+            framework with GPT-4 tool-calling for 3 member inquiry workflows,
+            handling 750 daily interactions and reducing weekly live-agent
+            escalations from 320 to 95.
+          </li>
+
+          <li>
+            Partnered with clinical informatics and legal teams to embed
+            <strong>HIPAA compliance and data governance</strong> into AI
+            pipelines, with all pipelines passing regulatory audits with
+            zero findings.
+          </li>
+        </ul>
+
+        <div class="experience-divider"></div>
+
+        <div class="tech-stack">
+          <h3>Technologies</h3>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>LangChain</span>
+            <span>GPT-4</span>
+            <span>RAG</span>
+            <span>Pinecone</span>
+            <span>Azure ML</span>
+            <span>BioBERT</span>
+            <span>XGBoost</span>
+            <span>AWS SageMaker</span>
+            <span>Apache Feast</span>
+            <span>Databricks</span>
+            <span>MLflow</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- MORGAN STANLEY -->
+      <article class="experience-card fade-in">
+        <div class="experience-card-top">
+          <div class="company-mark">MS</div>
+
+          <div class="experience-heading">
+            <h2>Morgan Stanley</h2>
+            <p class="experience-role">ML Engineer</p>
+            <p class="experience-location">India</p>
+          </div>
+
+          <div class="experience-date">
+            <p>May 2021 – Dec 2023</p>
+          </div>
+        </div>
+
+        <div class="experience-divider"></div>
+
+        <h3 class="contribution-heading">Key Contributions</h3>
+
+        <ul class="experience-list">
+          <li>
+            Developed an ensemble credit-risk model using
+            <strong>XGBoost, LightGBM, and logistic regression</strong>,
+            improving default-prediction AUC from 0.71 to 0.84 across
+            $180M in annual credit exposure.
+          </li>
+
+          <li>
+            Built an anomaly-detection pipeline with
+            <strong>Isolation Forest and Keras LSTM autoencoders</strong>,
+            generating 140 compliance alerts quarterly and reducing
+            manual surveillance review by 5 hours weekly.
+          </li>
+
+          <li>
+            Trained a <strong>BERT NLP classifier</strong> with Hugging Face
+            Transformers on 22,000 analyst research reports, achieving
+            a weighted F1 score of 0.89 and processing 25 weekly publications
+            in under 3 minutes.
+          </li>
+
+          <li>
+            Optimized hyperparameter tuning with
+            <strong>Optuna and MLflow</strong>, reducing model iteration
+            cycles from 5 days to 18 hours across 3 production equities-risk
+            models.
+          </li>
+
+          <li>
+            Engineered a 3-class market-regime classifier using
+            <strong>Random Forest</strong> and market indicators across
+            6 years of S&P 500 data, achieving macro-averaged precision
+            of 0.83 and recall of 0.80.
+          </li>
+
+          <li>
+            Implemented real-time model monitoring with
+            <strong>Apache Kafka</strong> and statistical drift detection,
+            triggering automated retraining alerts for 3 live models.
+          </li>
+
+          <li>
+            Analyzed portfolio rebalancing across 1,800 accounts using
+            <strong>SQL and pandas</strong>, identifying $18M in
+            underutilized fixed-income allocation opportunities for
+            the senior advisory team.
+          </li>
+
+          <li>
+            Built interactive <strong>Tableau dashboards</strong> for
+            4 portfolio managers by consolidating 3 source systems,
+            reducing weekly reporting preparation from 6 hours to
+            45 minutes.
+          </li>
+
+          <li>
+            Migrated 4 years of transaction history from Oracle to an
+            <strong>AWS S3 and Apache Spark lakehouse</strong>, reducing
+            analytical query execution time from 28 minutes to 6 minutes.
+          </li>
+        </ul>
+
+        <div class="experience-divider"></div>
+
+        <div class="tech-stack">
+          <h3>Technologies</h3>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>Scikit-learn</span>
+            <span>XGBoost</span>
+            <span>LightGBM</span>
+            <span>TensorFlow / Keras</span>
+            <span>BERT</span>
+            <span>Hugging Face</span>
+            <span>Optuna</span>
+            <span>MLflow</span>
+            <span>Apache Kafka</span>
+            <span>SQL</span>
+            <span>Tableau</span>
+            <span>Apache Spark</span>
+            <span>AWS S3</span>
+          </div>
+        </div>
+      </article>
+
     </div>
 
-    <!--UAB-->
-    <div class="exp-card fade-in">
-  <h3>University of Alabama at Birmingham – NVL Lab</h3>
-  <h6 class="text-primary">Data Analyst | Dec 2024 – Mar 2026 | Alabama</h6>
-  <ul>
-    <li>Cleaned and transformed 95% of raw HoloBMI neuroscience datasets using Python (Pandas) and custom validation pipelines, achieving 98% data accuracy across multi-gigabyte experimental files.</li>
-    <li>Synchronized microscope, high-speed camera, and behavioral event log timestamps across heterogeneous data streams, reaching 99% alignment accuracy for reliable downstream analysis.</li>
-    <li>Automated repetitive data processing workflows using SLURM-based batch scheduling, reducing manual execution time by 60% and improving researcher productivity.</li>
-    <li>Engineered ETL workflows to ingest, map, transform, and validate data from multiple experimental sources using referential checks and schema enforcement before loading into analytical layers.</li>
-    <li>Designed and implemented star-schema dimensional data models supporting scalable OLAP reporting, KPI computation, and performance monitoring dashboards.</li>
-    <li>Developed SQL unit test suites for complex transformations and query logic, ensuring data quality, integrity, and reporting accuracy.</li>
-    <li>Built dynamic Power BI dashboards visualizing behavioral insights, experiment trends, and sensor data, enabling near real-time anomaly detection and data-driven decisions.</li>
-    <li>Optimized Power BI datasets and underlying SQL queries to maintain responsive performance across large-scale multi-session reporting environments.</li>
-    <li>Implemented Tableau Server RBAC and Row-Level Security (RLS) policies to enforce data governance, access control, and research data privacy.</li>
-    <li>Performed data profiling, validation, and root cause analysis to resolve inconsistencies and improve dataset reliability for publication-grade reporting.</li>
-    <li>Used Advanced Excel features including Pivot Tables, XLOOKUP, and array formulas for pre-dashboard modeling, reconciliation, and quality assurance.</li>
-    <li>Collaborated with researchers to gather requirements, translate analytical needs into reporting solutions, and maintain version-controlled workflows using Git.</li>
-  </ul>
-</div>
-
-   
-
-   
-
-    <!-- Cyient -->
-    <div class="exp-card fade-in">
-      <h3>Cyient</h3>
-      <h6 class="text-primary">Jr. Data Analyst | Feb 2022 – Dec 2023  | India</h6>
-      <ul>
-        <li>Developed interactive Power BI dashboards improving reporting efficiency by 25%.</li>
-        <li>Integrated SQL Server, AWS & Databricks datasets into unified BI models.</li>
-        <li>Designed A/B testing dashboards improving campaign performance by 15%.</li>
-        <li>Performed hypothesis testing & Bayesian statistical analysis.</li>
-        <li>Built ETL pipelines for NoSQL & structured datasets.</li>
-        <li>Developed Python scripts for data cleaning & transformation.</li>
-        <li>Conducted predictive analytics using Scikit-learn models.</li>
-        <li>Optimized query performance by 15% using indexing strategies.</li>
-        <li>Implemented RLS security & governance frameworks.</li>
-        <li>Designed star & snowflake schema data models.</li>
-        <li>Performed root cause analysis for operational insights.</li>
-        <li>Collaborated with product & engineering teams for analytics solutions.</li>
-      </ul>
+    <!-- BOTTOM CTA -->
+    <div class="experience-cta fade-in">
+      <p class="section-eyebrow">WHAT'S NEXT?</p>
+      <h2>Let's build something <span>intelligent.</span></h2>
+      <p>
+        Interested in applied AI, machine learning, or building
+        production-ready LLM applications?
+      </p>
+      <a href="/#contact" class="experience-cta-button">
+        Get in touch <span aria-hidden="true">↗</span>
+      </a>
     </div>
 
   </div>
 </section>
 
-<style>
-.experience-page {
-  padding-top: 100px;
-}
-
-.exp-card {
-  background: rgba(255,255,255,0.85);
-  padding: 30px;
-  border-radius: 20px;
-  margin-bottom: 40px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  transition: all 0.4s ease;
-}
-
-[data-theme="dark"] .exp-card {
-  background: rgba(30,30,30,0.85);
-}
-
-.exp-card:hover {
-  transform: translateY(-8px);
-}
-
-.exp-card ul {
-  margin-top: 15px;
-}
-
-.exp-card li {
-  margin-bottom: 8px;
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-</style>
-
 <script>
-const faders = document.querySelectorAll(".fade-in");
-const appearOptions = { threshold: 0.2 };
+  document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".experience-page .fade-in");
 
-const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
-    entry.target.classList.add("visible");
-    observer.unobserve(entry.target);
+    if (!("IntersectionObserver" in window)) {
+      elements.forEach((element) => element.classList.add("visible"));
+      return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.08
+    });
+
+    elements.forEach((element) => observer.observe(element));
   });
-}, appearOptions);
-
-faders.forEach(fader => {
-  appearOnScroll.observe(fader);
-});
 </script>
 
 <%- include("partials/footer") %>
